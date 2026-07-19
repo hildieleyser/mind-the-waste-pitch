@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind the Waste</title>
+<style>
+  :root{
+    --platform:#15161A; --card:#23262F; --enamel:#F5F3EE; --dim:#B9B7B0;
+    --red:#E01D1D; --navy:#1D3A8A; --yellow:#F4C21B; --line:rgba(245,243,238,0.16);
+    --display:"Gill Sans","Gill Sans MT","Futura","Helvetica Neue",Arial,sans-serif;
+    --mono:"SF Mono",ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{min-height:100vh;background:var(--platform);color:var(--enamel);font-family:var(--display);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;padding:40px 20px;
+    background-image:radial-gradient(120% 80% at 80% 0%,rgba(224,29,29,.18),transparent 55%);}
+  .head{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;}
+  h1{text-transform:uppercase;font-weight:600;letter-spacing:.02em;font-size:clamp(40px,8vw,92px);line-height:.95;}
+  h1 em{font-style:normal;color:var(--red);}
+  .tag{font-size:clamp(17px,2.2vw,24px);color:var(--dim);font-weight:400;}
+  .cards{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;width:100%;max-width:900px;}
+  a.card{flex:1;min-width:280px;text-decoration:none;background:var(--card);border:1px solid var(--line);
+    border-radius:18px;padding:34px;display:flex;flex-direction:column;gap:10px;transition:.18s;border-top:5px solid var(--yellow);}
+  a.card:hover{transform:translateY(-4px);border-color:var(--yellow);}
+  a.card.two{border-top-color:var(--red);}
+  .ct{font-size:14px;font-family:var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);}
+  a.card.two .ct{color:var(--red);}
+  .ch{font-size:clamp(24px,3vw,32px);font-weight:600;text-transform:uppercase;letter-spacing:.02em;}
+  .cd{font-size:16px;color:var(--dim);line-height:1.45;}
+  .foot{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,243,238,.4);}
+</style>
+</head>
+<body>
+  <div class="head">
+    <svg width="96" height="96" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="#E01D1D" stroke-width="13"/><rect x="4" y="41" width="92" height="18" fill="#1D3A8A"/></svg>
+    <h1>Mind the <em>Waste</em></h1>
+    <p class="tag">A fridge sensor that eliminates food waste with AI.</p>
+  </div>
+  <div class="cards">
+    <a class="card" href="deck.html">
+      <span class="ct">&#9656; Open</span>
+      <span class="ch">Pitch deck</span>
+      <span class="cd">The full story: impact, the device, how it works, business, extensions and the team. Use arrow keys or scroll.</span>
+    </a>
+    <a class="card two" href="prototype.html">
+      <span class="ct">&#9656; Open</span>
+      <span class="ch">Interactive prototype</span>
+      <span class="cd">The app, clickable. Connect the magnet, scan the shelf, plan a meal, check glucose balance.</span>
+    </a>
+  </div>
+  <p class="foot">Open on any computer &middot; no install needed</p>
+</body>
+</html>
